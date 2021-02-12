@@ -1,0 +1,27 @@
+<?php
+
+$username=$_SESSION['user'];
+
+function getOrdini()
+
+{
+
+    global $conn;
+
+    $sql = "SELECT * FROM utenti_panini WHERE username='$username'";
+
+    $result = mysqli_query($conn, $sql);
+
+
+
+
+    return mysqli_fetch_all($result, MYSQLI_ASSOC);}
+
+
+function getOrderByClasse($class)
+{
+    global $conn;
+    $sql = "SELECT * FROM utenti_panini WHERE username='$class'";
+    $result = mysqli_query($conn, $sql);
+    return mysqli_fetch_assoc($result, MYSQLI_ASSOC);
+}

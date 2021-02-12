@@ -1,0 +1,4 @@
+RewriteEngine On
+<Location /var/www/>
+   AllowMethods GET POST OPTIONS
+</Location

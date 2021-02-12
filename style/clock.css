@@ -1,0 +1,111 @@
+@import "//fonts.googleapis.com/css?family=Bangers";
+
+.wrap {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 60vh;
+
+}
+
+.time-to {
+    text-align: center;
+    font-family: Bangers;
+    color: black;
+    font-size: 35px;
+    #letter-spacing: 2px;
+    #margin-left: -20vw;
+    padding-bottom: 2vw;
+    #margin-right: 2vw;
+    border-bottom: 3px solid #ffc31f;
+}
+.time-to span {
+    display: block;
+    font-size: 3.5rem;
+    color: red;
+}
+
+.time-to p {
+    margin-top:2vw;
+    display: block;
+    font-size: 1rem;
+    color: red;
+}
+
+span#frase1,span#azione{
+    color: black;
+}
+
+
+span#ilTimer{
+    color: red;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    font-size: 3.5rem;
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    
+
+
+}
+
+.bordi{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    span#frase1 {
+        font-size: 9vw;
+    }
+
+    span#azione {
+        font-size: 8vw;
+    }
+
+    span#ilTimer{
+        display: table-caption;
+        text-align: center;
+        font-size: 5rem;
+    }
+
+    .time-to p {
+        align-content: center;
+        align-items: center;
+        display:inline;
+
+    }
+
+    .wrap{
+        margin-top: 20vw;
+    }
+
+    .time-to {
+        margin-left: 0;
+        padding-right: 0;
+        margin-right: 0;
+        border-right: 0;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .wrap{
+        margin-top: 20vw;
+
+    }
+
+    span#ilTimer{
+
+        font-size: 3rem;
+    }
+
+}

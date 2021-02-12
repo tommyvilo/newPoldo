@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="barPoldo">
+    <serverData>
+      <paths name="TPI">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/" local="$PROJECT_DIR$/../TPI" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="barPoldo">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/node_modules" />
+            <excludedPath path="/phpmyadmin" />
+            <excludedPath path="/fpdf" />
+            <excludedPath path="/functions/vendor" />
+            <excludedPath path="/functions/fpdf" />
+            <excludedPath path="/tom" />
+            <excludedPath path="/giova" />
+            <excludedPath path="/nick" />
+            <excludedPath path="/alex" />
+            <excludedPath path="/edd" />
+            <excludedPath path="/Eduard" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

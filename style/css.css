@@ -1,0 +1,980 @@
+p#titleUSER,p#titlePASSW,a#modPasswd{
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+button#buttonSalvaPass{
+    background-color: #3dd73d;
+    border: 0px;
+    margin-left: 1vw;
+
+}
+
+td#tdMOD{
+    padding-left: 2vw;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 2;
+  cursor: pointer;
+  overflow-y:auto;
+
+}
+
+#riquadro
+{
+	background-color: #fefefe;
+    position: absolute;
+    width: 50vw;
+    z-index: 3;
+    margin-left: 24%;
+    margin-top: 25%;
+    border: solid #5a5959;
+    border-radius: 1.5vw;
+}
+
+.bordi
+{
+	width: 100%;
+    padding: 7.5vw;
+    #height: 100%;
+    #margin-bottom: 5vw;
+}
+
+
+.square
+{
+    /*background-color: rgb(255 193 134 / 40%);*/
+    width: 18vw;
+    padding: 1vw;
+    border-radius: 1.5vw;
+    border: 1px solid #ff9400;
+    color: black;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.2), 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+
+#paninoIMG {
+    
+    height: 8.5vw;
+    border-radius: 0.5vw;
+}
+
+.togli {
+    width: 3vw;
+    /* height: 1vw; */
+    padding: 0;
+    border: 0;
+    background-color: #fd4040;
+    border-radius: 0.7vw;
+    color: white;
+    font-size: 2vw;
+    /* right: 0; */
+}
+
+.aggiungi {
+    width: 3vw;
+    /* height: 1vw; */
+    padding: 0;
+    border: 0;
+    background-color: #41ce35;
+    border-radius: 0.7vw;
+    color: white;
+    font-size: 2vw;
+}
+
+
+#prezzo {
+    font-size: 1.8vw;
+}
+
+
+
+
+.pulsantiD {
+    margin-top: -5vw;
+}
+
+.testoPiccolo {
+    font-size: 1vw;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-right: 2vw;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ffab2c;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #f3d921;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 4vw;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#ricerca {
+    border: 2px solid #ff9400;
+    border-radius: 2vw 0 0 2vw;
+    width: 25vw;
+    height: 5vh;
+}
+
+
+#bottoneR {
+    border: 2px solid #ff9400;
+    border-radius: 0 1vw 0 0;
+    background-color: #ff9400;
+    color: white;
+    height: 5vh;
+}
+
+
+.ricerca {
+
+}
+
+
+.flip-card {
+    background-color: transparent;
+    width: 12vw;
+    border-radius: 0.5vw;
+    height: 8.5vw;
+    perspective: 15vw;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+
+    background-color: whitesmoke;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 0.5vw;
+}
+
+h3{
+    font-size: 1.3vw;
+
+}
+
+#flippedText{
+    z-index: 2;
+    position: absolute;
+}
+
+#paninoIMGBlurred{
+     filter: blur(3px);
+     -webkit-filter: blur(3px);
+    opacity: 10%;
+     z-index: 1;
+    #width: 12vw;
+    #height: 8.5vw;
+    border-radius: 0.5vw;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+ 
+ 
+ ::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  #background: #f1f1f1;
+    opacity: 0;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffcc00; 
+  border-radius: 2vw;
+}
+
+
+.ingredienti {
+    height: 10vh;
+    overflow-y: auto;
+}
+
+
+
+button.carrello {
+    background-color: orange;
+    color: white;
+    font-size: 1.5vw;
+    border: 0;
+    position: absolute;
+    border-radius: 0.6vw;
+    right: 3vw;
+    bottom: 3vh;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2), 3px 3px 5px 0 rgba(0, 0, 0, 0.6);
+    padding-right: 1vw;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    justify-content: center;
+}
+
+button.carrello:hover{
+    background-color: #f3d921;
+}
+
+
+h4#vaiA{
+
+    display: inline ;
+
+    margin-block-start: 0em;
+    margin-block-end:  0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+#inlinea{
+    display: list-item;
+}
+
+
+
+#scontrino {
+    position: absolute;
+    width: 32vw;
+    height: 87vh;
+    right: -50vw;
+    top: 8vh;
+    display: block;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    text-align: left;
+    border-radius: 2vw;
+    border: 3px solid #ffab2c;
+    padding: 3vw;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.2), 5px 5px 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+
+#price {
+    position: relative;
+    #right: -13vw;
+}
+
+
+#ordina {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    border: 0;
+    font-size: 0.8vw;
+    background-color: orange;
+    border-radius: 0.5vw;
+    color: white;
+    font-size: 1.5vw;
+    margin-top: 1.5vh;
+    box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.2), 3px 3px 5px 0 rgba(0, 0, 0, 0.6);
+    #animation-name: comparsa;
+    #animation-duration: 1s;
+    #animation-iteration-count: 1;
+    #animation-fill-mode: forwards;
+}
+
+
+@keyframes comparsa {
+    from {right: -50vw;}
+    to {right: 2vw;}
+}
+
+@keyframes scomparsa {
+    from {right: 2vw;}
+    to {right: -50vw;}
+}
+
+@keyframes comparsa1 {
+    from {right: -100vw;}
+    to {right: 10vw;}
+}
+
+@keyframes scomparsa1 {
+    from {right: 10vw;}
+    to {right: -100vw;}
+}
+
+
+#chiudi {
+    position: absolute;
+    top: 5vh;
+    right: 3vw;
+    border: 2px solid orange;
+    border-radius: 1vw;
+    color: orange;
+    background-color: white;
+    font-size: 1.5vw;
+}
+
+#chiudi:hover {
+    color: white;
+    background-color: orange;
+}
+
+#view {
+    width: 100%;
+    height: 4vw;
+    border: 0;
+}
+
+
+#userTab {
+    color: black;
+    #margin-top: -8vw;
+    border: 1px solid #ff9400;
+    border-radius: 1vw;
+}
+
+
+.ordini {
+    border: 0px solid #ff9400;
+    color: black;
+    border-radius: 1vw;
+    overflow: hidden;
+    border-collapse: collapse;
+    box-shadow: 5px 5px 0px 0px rgba(0, 0, 0, 0.2), 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.sfondo
+{
+    background-color: #ff9400;
+    color: #ffffff;
+}
+
+
+#titoli {
+    border: 1px solid #ffda22;
+    border-radius: 1.5vw;
+    background-color: #ffda22;
+}
+
+
+.info
+{
+    color: black;
+    text-align: left;
+    #border-left: 2px solid gray;
+    #position: relative;
+    #left: 47vw;
+    #top: -24vw;
+    #height: 33vw;
+    font-family: 'Bangers';
+    padding: 3vw;
+}
+
+.fixed_header{
+    border-collapse: collapse;
+    border: 0;
+    color: black;
+    border-radius: 1vw;
+    overflow: hidden;
+    box-shadow: 5px 7px 0px 0px rgba(0, 0, 0, 0.2), 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.fixed_header tbody{
+    display:block;
+    #width: 100%;
+    overflow: auto;
+    height: 25vw;
+    padding-left: 1vw;
+}
+
+.fixed_header thead tr {
+    display: block;
+}
+
+.fixed_header thead {
+    background-color: #ff9400;
+    color: #ffffff;
+    border-radius: 1vw;
+    border: 0;
+    box-shadow: 0px 4px 5px 2px rgba(0, 0, 0, 0.2), 8px 8px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.fixed_header th, .fixed_header td {
+    #padding: 5px;
+}
+
+.footer {
+    background-color: #232830;
+    width: 100%;
+    padding: 0.5vw;
+    color: white;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    font-size: 1vw;
+    text-align: left;
+    #padding-bottom:0;
+    #position:fixed;
+    #bottom:0;
+}
+
+
+#testoScontrino{
+    font-size: 1.5vw;
+}
+
+#paniniScontrino{
+    height: 20vw;
+    font-size: 1.1vw;
+}
+
+.scritteNere{
+    font-size: 2.5vw;
+    color: black;
+    font-family: 'Bangers';
+    font-weight: 100;
+}
+
+#Aggiorna{
+    width: auto;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family: 'Bangers';
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+}
+
+#Cancella{
+    width: auto;
+    font-size: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-family: 'Bangers';
+    padding-top: 0.2vw;
+    padding-bottom: 0.2vw;
+}
+
+li#about{
+    color: black;
+    font-size: 3vh;
+    text-align: left;
+    margin-top: 0.5vh;
+    pointer-events: none;
+
+}
+
+li#about:hover{
+    background-color: transparent;
+
+}
+
+h1#titoloUser{
+    font-size: 6.5vh;
+    text-align: left;
+    margin-top: 5vh;
+}
+
+h3#ops{
+    color: black;
+    font-family: inherit;
+}
+
+.cerca {
+    width: 25vw;
+    margin-bottom: 0vw;
+    border: 3px solid #ff9400;
+    border-radius: 0 1vw 1vw 0;
+    color: black;
+    background-color: #faf8f3;
+}
+
+#loading {
+    width: 20vw;
+    margin-top: 5vw;
+}
+
+.categorie
+{
+    width: 19.8vw;
+    margin-top: 5vw;
+    margin-right: 1vw;
+}
+
+#bandierina
+{
+    width: 5vw;
+    #position: absolute;
+}
+
+.categoriaDX
+{
+    text-align: right;
+}
+
+.categoriaSX
+{
+    text-align: left;
+}
+
+#poldoTriste {
+    width: 30vw;
+}
+
+
+#tipoRicerca {
+    border: 3px solid #ff9400;
+    border-radius: 1vw 0 0 1vw;
+    color: black;
+    background-color: #faf8f3;
+    margin-right: 3px;
+    margin-bottom: 0vw;
+}
+
+
+#slider {
+    position: absolute;
+    width: 40vw;
+    height: 19vw;
+    right: 10vw;
+    top: -50vw;
+    display: block;
+    background-color: white;
+    color: black;
+    z-index: 2;
+    text-align: left;
+    border-radius: 2vw;
+    border: 3px solid #ffab2c;
+    padding: 2vw;
+    font-size: 1.1vw;
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.2), 5px 5px 5px 0 rgba(0, 0, 0, 0.8);
+    #animation-name: comparsaS;
+    #animation-duration: 1s;
+    #animation-iteration-count: 1;
+    #animation-fill-mode: forwards;
+}
+
+@keyframes comparsaS {
+    from {top: -50vw;}
+    to {top: 10vw;}
+}
+
+@keyframes scomparsaS {
+    from {top: 10vw;}
+    to {top: -50vw;}
+}
+
+#chiudi2 {
+    position: absolute;
+    top: 3vh;
+    right: 2vw;
+    border: 2px solid orange;
+    border-radius: 1vw;
+    color: orange;
+    background-color: white;
+    font-size: 1.5vw;
+}
+
+#chiudi2:hover {
+    color: white;
+    background-color: orange;
+}
+
+#cercaPrezzo {
+    width: 100%;
+    border: 2px solid #ffa500;
+    border-radius: 1vw;
+    color: white;
+    background-color: #ffa500;
+    font-size: 1.2vw;
+}
+
+.barraSlider{
+
+    width: 15vw;
+    -webkit-appearance: none;
+    background: #f5d32b;
+    outline: none;
+    height: 0.7vw;
+    border-radius: 1vw;
+    border: 0;
+    padding: 0;
+}
+
+.barraSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 2vw;
+    background: #FF8C00;
+    cursor: pointer;
+}
+
+.barraSlider::-moz-range-thumb {
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 2vw;
+    background: #FF8C00;
+    cursor: pointer;
+}
+
+#minimo{
+    position: absolute;
+    right: 5vw;
+}
+
+
+#massimo{
+    position: absolute;
+    right: 5vw;
+}
+
+@media screen and (max-width: 1300px)
+{
+    #scontrino{
+        height: auto;
+    }
+}
+
+
+@media screen and (max-width: 600px)
+{
+    .fixed_header th{
+        padding-left: 4vw;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .barraSlider::-webkit-slider-thumb {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 3vw;
+    }
+
+    .barraSlider::-moz-range-thumb {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 3vw;
+
+    }
+
+    #slider {
+        width: 80%;
+        border-radius: 4vw;
+        height: 58vw;
+        font-size: 3vw;
+        padding: 4vw;
+        top: -100vw;
+    }
+
+    @keyframes comparsaS {
+        from {top: -100vw;}
+        to {top: 10vw;}
+    }
+
+    @keyframes scomparsaS {
+        from {top: 10vw;}
+        to {top: -100vw;}
+    }
+
+    #chiudi2 {
+        top: 3vw;
+        right: 4vw;
+        border-radius: 3vw;
+        font-size: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        padding-right: 4vw;
+        padding-left: 4vw;
+    }
+
+    .barraSlider {
+        width: 30vw;
+        height: 2vw;
+    }
+
+    #cercaPrezzo {
+        border-radius: 3vw;
+        font-size: 3vw;
+    }
+
+
+    #tipoRicerca{
+        width: 100%;
+        border-radius: 4vw;
+    }
+
+    #loading {
+        width: 90%;
+    }
+
+    #bandierina{
+        width: 22vw;
+    }
+
+    .categorie {
+        width: 100%;
+        margin-top: 10vw;
+    }
+
+    .cerca {
+        width: 100%;
+        border-radius: 4vw;
+        margin-bottom: 3vw;
+    }
+
+    h1#titoloUser{
+        font-size: 5vh;
+        text-align: left;
+        margin-top: 5vh;
+        margin-bottom: 2vw ;
+    }
+
+    .square
+    {
+        width: 90%;
+        padding: 5vw;
+        border-radius: 5vw;
+        border: 2px solid #ff9400;
+        margin-bottom: 10vw;
+        padding-bottom: 0;
+        margin-left: 4vw;
+    }
+
+    img#paninoIMG {
+        width: 70%;
+        height: 45vw;
+    }
+
+    .testoPiccolo {
+        font-size: 3vw;
+    }
+
+    .aggiungi{
+        width: 12vw;
+        border-radius: 3vw;
+        font-size: 8vw;
+    }
+
+    .togli{
+        width: 12vw;
+        border-radius: 3vw;
+        font-size: 8vw;
+    }
+
+    .pulsantiD {
+        margin-top: -19vw;
+    }
+
+    button.carrello {
+        border-radius: 3vw;
+        right: 5vw;
+        top: 0;
+        height: 10vw;
+        background-color: #ffa50000;
+        box-shadow: 0 0 0 0;
+    }
+
+    #carrello {
+        font-size: 6vw;
+        margin-right: 1vw;
+    }
+
+    #iconaCarrello
+    {
+        font-size: 6vw;
+    }
+
+    #scontrino{
+        width: 85%;
+        height: 85%;
+        padding: 5vw;
+        right: -100vw;
+    }
+
+    #chiudi{
+        top: 4vw;
+        right: 5vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+        font-size: 6vw;
+        border-radius: 3vw;
+    }
+
+    #testoScontrino{
+        font-size: 5vw;
+    }
+
+    #paniniScontrino{
+        height: 60%;
+        font-size: 3vw;
+    }
+
+    #ordina{
+        font-size: 5vw;
+        margin-top: 4vw;
+    }
+
+    @keyframes comparsa {
+        from {right: -100vw;}
+        to {right: 2vw;}
+    }
+
+    @keyframes scomparsa {
+        from {right: 2vw;}
+        to {right: -100vw;}
+    }
+
+    .fixed_header{
+        #margin-top: 30vw;
+        border-radius: 3vw;
+        width: 100%;
+    }
+
+    .info{
+        border: 0;
+        left: 0;
+        top: -125vw;
+        width: 100%;
+    }
+
+    .scritteNere{
+        font-size: 7vw;
+    }
+
+    #Aggiorna{
+        width: auto;
+        font-size: 7vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        /*
+        position: absolute;
+        right: 0vw;
+        top: 4vw;
+         */
+    }
+
+    #Cancella{
+        width: auto;
+        font-size: 7vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        /*
+        position: absolute;
+        right: 0vw;
+        top: 12vw;
+         */
+    }
+
+    .fixed_header tbody{
+        height: 80vw;
+        padding-left: 4vw;
+    }
+
+    li#about{
+        font-size: 4vw;
+
+    }
+
+    ul{
+        padding-left: 5vw;
+    }
+
+    h3#ops{
+        font-size: 4vw;
+    }
+
+    #noSmartphone
+    {
+        display: none;
+    }
+
+}

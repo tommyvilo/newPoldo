@@ -1,0 +1,14 @@
+h1{
+    color:red;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0px solid black;
+    align:center;
+}
+
+tr,th,td{
+      text-align:center;
+}

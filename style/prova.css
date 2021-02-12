@@ -1,0 +1,61 @@
+body{
+    align-items: center;
+    text-align: center;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+#div2{
+    height: 5vw;
+    width: 5vw;
+    text-align: center;
+    background-color: #e2d918;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 500px;
+    right: 0;
+}
+
+
+h1#titolo{
+    font-size: 5rem;
+}
+
+button {
+    outline: none;
+    height: auto;
+    border-radius: 10px;
+    width: auto;
+    background-color: darkorange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-bottom: 2vw;
+    font-family: 'Yusei Magic', sans-serif;
+}
+
+p{
+    font-weight: bold;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    vertical-align: central;
+}
+
+p#IL{
+    margin-top: 25%;
+}
+
+
+p#CUBO{
+    margin-bottom: auto;
+}

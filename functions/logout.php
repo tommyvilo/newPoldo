@@ -1,0 +1,1 @@
+<?phpsession_start();session_unset($_SESSION['user']);session_destroy();setcookie("easterEgg", "", time()-3600); //non va lolheader("location: ../login.php");?>

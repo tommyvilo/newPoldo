@@ -1,0 +1,31 @@
+<?php
+    require_once("config.php");
+    require_once("admin_functions.php");
+    $panino = json_decode($_COOKIE["mioBiscotto1"]);
+    //echo $panino-> prezzo;
+    global $conn;
+    $nome = $panino->nome;
+    $nome=$conn -> real_escape_string($nome);
+    $prezzo = $panino->prezzo;
+    $prezzo=$conn -> real_escape_string($prezzo);
+    $ingr = $panino->ingredienti;
+    $ingr=$conn -> real_escape_string($ingr);
+    $qt = $panino->quantita;
+    $qt=$conn -> real_escape_string($qt);
+    $DS = $panino-> DS;
+    $DS=$conn -> real_escape_string($DS);
+    $cat = $panino-> categoria;
+    $cat=$conn -> real_escape_string($cat);
+    $image = $panino-> image;
+    $image=$conn -> real_escape_string($image);
+    $avaiable = $panino-> avaiableCK;
+    $avaiable=$conn -> real_escape_string($avaiable);
+    $caldoFreddo = $panino-> caldoFreddo;
+    $caldoFreddo=$conn -> real_escape_string($caldoFreddo);
+    echo "ciao bella";
+    $sql = "INSERT INTO panini (nome,ingredienti,prezzo,DS,quantita,categoria,image,avaiableCK,caldoFreddo,dispoBK) 
+            VALUES ('$nome','$ingr','$prezzo','$DS','$qt','$cat','$image','$avaiable','$caldoFreddo','$qt') ";
+    mysqli_query($conn, $sql);
+    echo $conn->error;
+    //$conn->close();
+header("location: ../managePanini.php");
