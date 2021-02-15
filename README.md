@@ -1,12 +1,12 @@
 # NewPoldo
 Nuova versione sito BarPoldo per ITI G. Marconi Verona
 
-## Requisiti Hardware Macchina Virtuale:
+## Requisiti Hardware Macchina Virtuale
 * PROCESSORE: Quadcore
 * RAM: 8 GB
 * ROM: 64 GB
 
-## Requisiti Software Macchina Virtuale:
+## Requisiti Software Macchina Virtuale
 * OS: Ubuntu 18.xx.xx
 * WEBSERVER: Apache/2.4.29
 * SERVER DB: MySqL 5.0.12
