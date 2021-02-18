@@ -2,7 +2,7 @@ define("BASE_URL","https://51.124.169.35/");<?php
 	session_start();
 	$servername = "localhost";
 	$username = "barpoldo";
-	$password = "Zermaculo180202@";
+	$password = "****";
 	$dbname = "barpoldo";
 	// Create connection
 	$conn= mysqli_connect($servername,$username,$password,$dbname);
