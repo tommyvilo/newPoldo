@@ -2,6 +2,7 @@
 Nuova versione sito BarPoldo per ITI G. Marconi Verona. 
 
 BarPoldo è un prodotto software creato dagli studenti per gli studenti, è una piattaforma web per la prenotazione del cibo prenotabile e usufruibile durante l'intervallo a scuola.
+La seguente repository contiene file per la gestione a 360° della piattaforma, dalle pagine visualizzabili dal cliente al lato gestionale, fruibile da amministratore.
 
 ## Logo
 <img src="images/favicon.png" width="250">
