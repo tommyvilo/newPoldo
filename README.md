@@ -17,5 +17,6 @@ La seguente repository contiene file per la gestione a 360° della piattaforma, 
 * WEBSERVER: Apache/2.4.29
 * SERVER DB: MySqL 5.0.12
 * Versione PHP: 7.3.26
+* [DDL DB](DDL-POLDO.sql)
 
 by Castaldini Giovanni, Gaiga Alex, Vilotto Tommaso, Zerman Nicolò, Zugravu Eduard
